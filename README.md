@@ -41,12 +41,17 @@ Pros for using quantization:
 98.81% less time is needed during inference
 ![picture](images/quantization-inference-time.png)
 
+### Quantization Parameters
+Same number of parameters but the difference is the number of bits to resemble it is now 4-bits instead of 32-bits
+![picture](images/quantization-before-32bit.jpg)
+![picture](images/quantization-after-4bit.jpg)
+
 ### Another remarks
 Accuracy is not affected by any means
 
 ## 4) Pruning
 Pruning is the process of removing the least important nodes and weights from the network
-![picture](images/pruning-overview.jpg)
+![picture](images/pruning-overview.png)
 
 Technique used
 - magnitude-based importance pruning (reported below & code is pushed "absolute_norm")
@@ -63,6 +68,11 @@ Technique used
 ### Pruning Inference time / Latency
 96.71% less time is needed during inference
 ![picture](images/pruning-inference-time.png)
+
+### Quantization Parameters
+Same number of parameters but the difference is the number of bits to resemble it is now 4-bits instead of 32-bits
+![picture](images/llama3-parameters-before-pruning.jpg)
+![picture](images/llama3-parameters-after-pruning.jpg)
 
 ### Another remarks
 Accuracy is affected BUT...
