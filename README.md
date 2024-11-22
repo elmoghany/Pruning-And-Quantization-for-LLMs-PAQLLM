@@ -71,6 +71,7 @@ Technique used
 
 ### Pruning  Parameters
 The number of parameters dropped drastically making the llm a lot faster & smaller
+![picture](images/pruning-parameters.png)
 ![picture](images/llama3-parameters-before-pruning.jpg)
 ![picture](images/llama3-parameters-after-pruning.jpg)
 
