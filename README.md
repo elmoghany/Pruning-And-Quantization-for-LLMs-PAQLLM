@@ -69,8 +69,8 @@ Technique used
 96.71% less time is needed during inference
 ![picture](images/pruning-inference-time.png)
 
-### Quantization Parameters
-Same number of parameters but the difference is the number of bits to resemble it is now 4-bits instead of 32-bits
+### Pruning  Parameters
+The number of parameters dropped drastically making the llm a lot faster & smaller
 ![picture](images/llama3-parameters-before-pruning.jpg)
 ![picture](images/llama3-parameters-after-pruning.jpg)
 
