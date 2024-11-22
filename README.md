@@ -19,7 +19,7 @@ Due to the above reasons, we need pruning and quantization to fix those issues
 
 ## 3) Quantization
 Quantization is the process of converting a continuous signal into a discrete signal
-![picture](quantization-overview.jpg)
+![picture](images/quantization-overview.jpg)
 
 Technique used:
 * 4 bit quantization for the weights only
@@ -31,13 +31,14 @@ Pros for using quantization:
 
 ### Quantization Storage
 65% less storage is needed after quantization
+![picture](images/quantization-storage-usage.png)
 
 ### Quantization Memory
 82.5% less memory is needed after quantization
-![picture](quantization-memory-usage.png)
+![picture](images/quantization-memory-usage.png)
 
 ### Quantization Inference time
 98.81% less time is needed during inference
-![picture](quantization-inference-time.png)
+![picture](images/quantization-inference-time.png)
 
 ## 4) Pruning
