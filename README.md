@@ -22,7 +22,7 @@ Quantization is the process of converting a continuous signal into a discrete si
 ![picture](images/quantization-overview.jpg)
 
 Technique used:
-* 4 bit quantization for the weights only
+- 4 bit quantization for the weights only
   
 Pros for using quantization:
 1) less memory usage
@@ -37,8 +37,36 @@ Pros for using quantization:
 82.5% less memory is needed after quantization
 ![picture](images/quantization-memory-usage.png)
 
-### Quantization Inference time
+### Quantization Inference time / Latency
 98.81% less time is needed during inference
 ![picture](images/quantization-inference-time.png)
 
+### Another remarks
+Accuracy is not affected by any means
+
 ## 4) Pruning
+Pruning is the process of removing the least important nodes and weights from the network
+![picture](images/pruning-overview.jpg)
+
+Technique used
+- magnitude-based importance pruning (reported below & code is pushed "absolute_norm")
+- Channel pruning (not reported below but code is pushed & being updated)
+
+### Pruning Storage
+80% less storage is needed after pruning
+![picture](images/pruning-storage-usage.png)
+
+### Pruning Memory
+54.04% less memory is needed after pruning
+![picture](images/pruning-memory-usage.png)
+
+### Pruning Inference time / Latency
+96.71% less time is needed during inference
+![picture](images/pruning-inference-time.png)
+
+### Another remarks
+Accuracy is affected BUT...
+Needs iterative pruning and training to keep accuracy the same as the original LLM
+
+
+
